@@ -25,6 +25,7 @@ acertos r [] = [] -- Caso base é quando testarmos todos os jogos
 acertos [] (j:js) = [] -- Para o caso hipotético em que o resultado é vazio
 acertos r (j:js) = (mitnick r j):(acertos r js)
 
+-- Conta quantas vezes um inteiro "q" aparece em uma lista "(a:as)"
 turing :: [Int] -> Int -> Int
 turing [] _ = 0
 turing (a:as) q | a == q = (1 + (turing as q))
@@ -32,6 +33,20 @@ turing (a:as) q | a == q = (1 + (turing as q))
 
 numPremios :: Resultado -> Jogos -> (Int, Int, Int)
 numPremios r j = ((turing (acertos r j) 4),(turing (acertos r j) 5),(turing (acertos r j) 6))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
