@@ -14,3 +14,7 @@ bakur timeq (time1, g1, time2, g2) | timeq == time1 = g1
 gols :: Time -> [Jogo] -> Int
 gols _ [] = 0
 gols timeq (x:xs) = (bakur timeq x) + (gols timeq xs)
+  
+
+
+
