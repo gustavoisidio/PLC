@@ -8,41 +8,55 @@ type Jogo = (Time, Int, Time, Int)
 
 
 -- Questao 1 A)
+-- Função que retorna quantos gols foram FEITOS por um Time em um Jogo
 bakur :: Time -> Jogo -> Int
 bakur timeq (time1, g1, time2, g2) | timeq == time1 = g1
                                    | timeq == time2 = g2
                                    | otherwise = 0
 
-gols :: Time -> [Jogo] -> Int
+-- Uma função que retorna os gols FEITOS por um dado Time                                   
+gols :: Time -> [Jogo] -> Int 
 gols _ [] = 0
 gols timeq (x:xs) = (bakur timeq x) + (gols timeq xs)
 
+exListaDeJogos = [(Australia, 1, Dinamarca, 3), (Croacia, 1, Dinamarca, 3), (Dinamarca, 1, Franca, 1)] :: [Jogo]
+
 -- Questao 1 B)
 
+-- Função que retorna quantos gols um Time TOMOU em um Jogo
 siria :: Time -> Jogo -> Int
 siria timeq (time1, g1, time2, g2) | timeq == time1 = g2
                                    | timeq == time2 = g1
                                    | otherwise = 0
 
+-- Função que retorna quantos gols um Time TOMOU em uma lista de Jogos                                   
 golsTomados :: Time -> [Jogo] -> Int
 golsTomados _ [] = 0
 golsTomados timeq (x:xs) = (siria timeq x) + (golsTomados timeq xs)
 
+-- Uma função que subtrai os gols FEITOS dos gols TOMADOS
 saldo :: Time -> [Jogo] -> Int
 saldo timeq jogos = (gols timeq jogos) - (golsTomados timeq jogos)
 
 -- Questao 1 C)
 
 
+-- Australia 0 pontos
+-- Dinamarca 3 pontos
+exJogo = (Australia, 1, Dinamarca, 3) :: Jogo
+
+-- Retorna o numero de pontos de um Time em um Jogo 
 nairobi :: Time -> Jogo -> Int -- pra saber se o time ta naquela tupla e chamar pra calcular pontos
 nairobi timeq (time1, g1, time2, g2) | timeq == time1 = (montecarlo g1 g2)
                                      | timeq == time2 = (montecarlo g2 g1)
                                      | otherwise = 0
 
-montecarlo :: Int -> Int -> Int -- retorna o saldo do time em questao naquela partida
+-- Retorna os pontos feitos pelo Time "a" a partir dos gols da partida
+montecarlo :: Int -> Int -> Int 
 montecarlo a b | a > b = 3
                | a == b = 1
                | otherwise = 0                                   
+
 
 pontos :: Time -> [Jogo] -> Int
 pontos _ [] = 0
@@ -68,8 +82,10 @@ jogoex3 = (Australia, 1, Dinamarca, 1) :: Jogo
 
 
 
+-- Questao 1 D)
+type Grupo = (Char, Time, Time, Time, Time) 
 
-type Grupo = (Char, Time, Time, Time, Time) -- Questao 1 D)
+
 -- Questao 1 E)
 
 
