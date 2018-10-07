@@ -7,7 +7,7 @@ Nome:
 Vamos representar os times e jogos com os tipos de dados e sinonimos de tipos abaixo:
 
 data Time = Egito | Russia | Arabia | Uruguai 
-          | Ira | Marrocos | Portugal | Espanha
+          | Ira | Marrocos | Portugal | Espanha de
 
 type Jogo = (Time, Int, Int, Time) 
 Por exemplo: Egito 3 x 1 Russia será representado por (Egito, 3, 1, Russia)
@@ -29,7 +29,7 @@ exemplos de grupos são: Grupo A: Egito, Russia, Arabia e Uruguai;
                         Grupo B: Ira, Marrocos, Portugal e Espanha;
 classificados :: Grupo -> [Jogo] -> (Time, Time)
       
-você deve definir e testar vários conjuntos de jogos para validar sua implementacao.
+você deve definir e testar vários conjuntos de jogos para validar sua implementação.
 jogos1 :: [Jogo]
 jogos1 = [(Egito, 1, 3, Russia), (Arabia, 0, 3, Uruguai), 
           (Egito, 0, 0, Arabia),(Russia, 0, 2, Uruguai), 

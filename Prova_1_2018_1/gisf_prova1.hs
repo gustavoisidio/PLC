@@ -88,7 +88,10 @@ type Grupo = (Char, Time, Time, Time, Time)
 
 -- Questao 1 E)
 
-
+-- Maior número de pontos 
+-- Empate
+-- 1) Saldo de gols
+-- 2) Gols feitos
 gp1 = ('C', Australia, Dinamarca, Franca, Peru) :: Grupo
 
 classificados :: Grupo -> [Jogo] -> (Time, Time)
@@ -112,33 +115,20 @@ mGols [] = []
 mGols ((t1, p1, g1):ts) = g1 : (mGols ts)
 
 -- Tabela com times, pontos e gols
-tabTimes = mTimes pontua1 :: [Time]
+tabTimes  = mTimes pontua1  :: [Time]
 tabPontos = mPontos pontua1 :: [Int]
-tabGols = mGols pontua1 :: [Int]
+tabGols   = mGols pontua1   :: [Int]
 
 maxPontos :: [Time] -> [Int] -> [Int] -> (Time, Int, Int)
-maxPontos (t:ts) (p:ps) (g:gs) | (p == maximum (p:ps)) = (t, p, g)
-                               | otherwise = (maxPontos ts ps gs)
+maxPontos (t:ts) (p:ps) (g:gs) | ((p == maximum (p:ps)) && (p == maximum ps)) = (t, p, g) -- Temos um empate
+                               |             otherwise = (maxPontos ts ps gs)
 
-        
--- maxTabelaPontos :: [Time] -> [Int] -> [Int] -> [(Time, Int, Int)]
--- maxTabelaPontos [] [] [] = []
--- maxTabelaPontos t p g = primeiro : maxPontos(remove (maxPontos t p g)) : maxPontos(remove maxPontos(remove (maxPontos t p g))) : maxPontos(remove maxPontos(remove (remove (maxPontos t p g))))
---          where primeiro = (maxPontos t p g)
---                segundo = maxPontos
 
-remove :: (Time, Int, Int) -> [(Time, Int, Int)] -> [(Time, Int, Int)]
+
+remove :: Time -> [(Time, Int, Int)] -> [(Time, Int, Int)]
 remove _ [] = []
-remove (t, p, g) ((xt, xp, xg):xs) | t == xt = xs
-                                   | otherwise = (xt, xp, xg) : (remove (t, p, g) xs)
-
-
-{-
-Tentei construir funcoes que montariam a tabela conforme o maior numero de pontos
-e o maior numero de gols para os casos em que ocorresse a falha
-maxPontos, por exemplo, retornaria o time com maior numero de pontos.
-Entretanto, não consegui finalizar tudo a tempo
--}
+remove t ((xt, xp, xg):xs) | t == xt   = xs
+                           | otherwise = (xt, xp, xg) : (remove t xs)
 
 
 

@@ -20,6 +20,7 @@ Exemplos: substr "abc" "xyz12abrt" ----> False
           substr "aab" "aacrtxxeaayb" -> False
 substr :: String -> String -> Bool
 
+
 3) Um robô é controlado por 4 comandos: 
    Left, para girar sua direção à esquerda 90 graus;
    Right, para girar sua direção à direita em 90 graus;
