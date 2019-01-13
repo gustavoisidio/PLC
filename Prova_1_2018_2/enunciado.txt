@@ -52,8 +52,9 @@ decode :: Dicionario -> String -> String
 por uma árvore binária, acelerando a busca. Implemente a função codeTree abaixo que, ao invés de receber o
 dicionário como uma lista, o recebe como uma árvore de busca binária.
 
-type DicionarioT = Tree Int Stringdata Tree chave valor = Node chave valor (Tree chave valor) (Tree chave valor)
-                                                        | Leaf
+type DicionarioT = Tree Int String
+data Tree chave valor = Node chave valor (Tree chave valor) (Tree chave valor)
+                      | Leaf
 
 meuDicionarioT :: DicionarioT
 meuDicionarioT = Node 4 "teria" (Node 3 "cafe" (Node 1 "casa" Leaf Leaf) Leaf)
