@@ -1,6 +1,8 @@
 type Resultado = [Int]
 type Jogos = [[Int]]
 
+
+
 -- Um exemplo de jogo com 2 premiados
 exJogo = [[12,13,14,15,16,17], [1, 2, 3, 4, 5, 12], [6,7,14,15,16,17], [12,13,14,15,16,17]]  :: Jogos
 exResultado = [12,13,14,15,16,17] :: Resultado
