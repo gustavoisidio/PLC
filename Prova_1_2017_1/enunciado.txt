@@ -5,7 +5,7 @@ Nome:
 
  1) (2.5) Escreva uma função que verifica se uma lista já está ordenada, 
    do menor para o maior elemento..
-   exemplo: isSorted [1,6,8,9,9] ------> True
+   exemplo:    ------> True
             isSorted [1,6,8,7,9] ------> False
    Dica: verifique se sua resposta funciona para listas de tamanho ímpar.
 
