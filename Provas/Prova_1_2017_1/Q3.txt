@@ -1,0 +1,20 @@
+Estas respostas para a terceira questão estão incompletas, não foram revisadas e podem conter erros. 
+
+a) A função map irá aplicar a função (\x -> x + x), que tem o mesmo comportamento de (*2),
+para cada elemento da lista [3,5,7,9]. O resultado disso, é que cada elemento da lista será
+somado consigo mesmo, ou seja, multiplicado por 2, gerando assim a lista [6,10,14,18]. 
+
+b) A função filter irá aplicar a função (\x -> x < 7) na lista [5,7,9,11], eliminando todos
+os seus elementos que sejam maiores ou iguais a 7. Gerando, portanto, a lista [5].
+
+c) A função foldr1, aplicando a multiplicação na lista [-2,0,2,4], fará com que seus elementos
+sejam multiplicados entre si, gerando o resultado 0.
+
+d) 
+
+e) 
+
+
+
+
+
