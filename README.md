@@ -2,7 +2,7 @@
 
 Um apanhado de provas antigas e aulas práticas e suas respostas
 
-### Índice:
+## Índice:
 
 Explain what these tests test and why
 * [Provas](https://github.com/gustavoisidio/PLC/tree/master/Provas) - Provas antigas de Haskell feitas pelo professor André Santos e resolvidas por mim.
