@@ -1,6 +1,6 @@
 # Paradigmas de Linguagens Computacionais (if686ec)
 
-Um apanhado de provas antigas e aulas práticas acompanhadas de uma resolução
+Um apanhado de provas antigas e aulas práticas e suas respostas
 
 ### Índice:
 
