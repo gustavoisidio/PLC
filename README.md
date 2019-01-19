@@ -4,7 +4,6 @@ Um apanhado de provas antigas e aulas práticas e suas respostas
 
 ## Índice:
 
-Explain what these tests test and why
 * [Provas](https://github.com/gustavoisidio/PLC/tree/master/Provas) - Provas antigas de Haskell feitas pelo professor André Santos e resolvidas por mim.
 * [APs](https://github.com/gustavoisidio/PLC/tree/master/APs) - Questões de aulas práticas feitas por monitores e respondidas por mim.
 * [Algoritmos](https://github.com/gustavoisidio/PLC/tree/master/Algoritmos) - Uma série de algoritmos interessantes em Haskell
