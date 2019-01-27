@@ -1,7 +1,7 @@
 
 
 import Prelude hiding (Maybe (..))
-
+import Data.List
 
 myDrop n xs = if n <= 0 || null xs
               then xs
@@ -67,12 +67,13 @@ data Month = January
 
 type Day = Int          
 
+-- Record Syntax
 data CalendarTime = CalendarTime {
     ctYear :: Int,
     ctMonth :: Month,
-    ctDay, ctHour, ctMin, ctSec :: Int,
     ctPicosec :: Integer, 
     ctWDay :: Day,
+    ctDay, ctHour, ctMin, ctSec :: Int,
     ctYDay :: Int,
     ctTZName :: String,
     ctTZ :: Int,
@@ -141,6 +142,34 @@ pluralise word counts = map plural counts
              plural 1 = "one " ++ word
              plural n = show n ++ " " ++ word ++ "s"              
 -- ****** 
+
+splitLines :: String -> [String]
+splitLines [] = []
+splitLines cs =
+    let (pre, suf) = break isLineTerminator cs
+        isLineTerminator c = c == '\r' || c == '\n'
+    in pre : case suf of
+               ('\r':'\n':rest) -> splitLines rest
+               ('\r':rest) -> splitLines rest
+               ('\n':rest) -> splitLines rest 
+               _ -> []
+
+
+
+splitLineS :: String -> [String]
+splitLineS [] = []
+splitLineS cs = map deleteLineTerm (lines cs)
+    where deleteLineTerm x | isLineTerminatoR (last x) = deletLeast x
+                           | otherwise = x
+          isLineTerminatoR c = c == '\r'    
+          deletLeast m = take ((length m) - 1) m
+
+-- unlines faz o inverso, adiciona \n 
+-- isInfixOf, isPrefixOf e isSufixOf bem interessantes pra verificar substrings
+-- all e any são tipo map para funções que retornam Bool 
+
+
+
 
 
 
