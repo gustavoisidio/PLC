@@ -11,7 +11,7 @@ Um apanhado de provas antigas e aulas práticas e suas respostas
 
 ## Sugestões para estudo:
 
-* [Slides](https://sites.google.com/a/cin.ufpe.br/if686ec/aulas) - São bem didáticos e possuem exercícios importantes para fixação do conteúdo.
+* [Slides](https://github.com/gustavoisidio/PLC/tree/master/Slides) - São bem didáticos e possuem exercícios importantes para fixação do conteúdo.
 
 * [Aprender Haskell](http://haskell.tailorfontela.com.br) - Uma espécie de livro online com a explicação de boa parte do conteúdo da disciplina.
 
