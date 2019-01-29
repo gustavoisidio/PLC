@@ -1,0 +1,7 @@
+## Tasks
+
+    * [ ] Ordenação
+    * [ ] Busca
+    * [ ] Grafos
+    
+    
