@@ -1,7 +1,7 @@
 ## Tasks
 
     * [ ] Ordenação
-    * [ ] Busca
-    * [ ] Grafos
+    * [✓] Busca
+    * [✓] Grafos
     
     
