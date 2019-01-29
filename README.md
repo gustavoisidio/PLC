@@ -4,10 +4,10 @@ Um apanhado de provas antigas e aulas práticas e suas respostas
 
 ## Índice:
 
-* [Provas](https://github.com/gustavoisidio/PLC/tree/master/Provas) - Provas antigas de Haskell feitas pelo professor André Santos e resolvidas por mim.
-* [APs](https://github.com/gustavoisidio/PLC/tree/master/APs) - Questões de aulas práticas feitas por monitores e respondidas por mim.
-* [Algoritmos](https://github.com/gustavoisidio/PLC/tree/master/Algoritmos) - Uma série de algoritmos interessantes em Haskell
-* [Extra](https://github.com/gustavoisidio/PLC/tree/master/Extra) - Um conteúdo extra, com algumas coisas interessantes de Haskell que não são vistas na disciplina.
+* [ ] [Provas](https://github.com/gustavoisidio/PLC/tree/master/Provas) - Provas antigas de Haskell feitas pelo professor André Santos e resolvidas por mim.
+* [ ] [APs](https://github.com/gustavoisidio/PLC/tree/master/APs) - Questões de aulas práticas feitas por monitores e respondidas por mim.
+* [ ] [Algoritmos](https://github.com/gustavoisidio/PLC/tree/master/Algoritmos) - Uma série de algoritmos interessantes em Haskell
+* [ ] [Extra](https://github.com/gustavoisidio/PLC/tree/master/Extra) - Um conteúdo extra, com algumas coisas interessantes de Haskell que não são vistas na disciplina.
 
 ## Sugestões para estudo:
 
@@ -15,7 +15,7 @@ Um apanhado de provas antigas e aulas práticas e suas respostas
 
 * [Aprender Haskell](http://haskell.tailorfontela.com.br) - Uma espécie de livro online com a explicação de boa parte do conteúdo da disciplina.
 
-* [Real World Haskell](https://www.amazon.com/Real-World-Haskell-Bryan-OSullivan/dp/0596514980/ref=sr_1_1?ie=UTF8&qid=1548689700&sr=8-1&keywords=real+world+haskell) - Um excelente livro, bastante prático e didático. 
+* [Real World Haskell](https://www.amazon.com/Real-World-Haskell-Bryan-OSullivan/dp/0596514980/ref=sr_1_1?ie=UTF8&qid=1548689700&sr=8-1&keywords=real+world+haskell) - Um excelente livro, bastante prático e didático.
 
 ## Autores
 
