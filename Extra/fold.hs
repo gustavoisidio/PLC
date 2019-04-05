@@ -1,6 +1,6 @@
 
 -- A função 'aplicar' abaixo recebe uma função 'f' cuja aridade é 2, um inteiro 'a', uma lista
--- de inteiros e retorna um inteiro. 'Aplicar' aplica 'f' em a e no primeiro elemento da lista. 
+-- de inteiros e retorna um inteiro. 'Aplicar' aplica 'f' em 'a' e no primeiro elemento da lista. 
 -- O resultado disso é armazenado em a e a fução aplicar repete o processo até que a lista esteja
 -- vazia. 
 
@@ -25,9 +25,10 @@ aplicarDireita :: (Integer -> Integer -> Integer) -> Integer -> [Integer] -> Int
 aplicarDireita f a [] = a
 aplicarDireita f a (b:bs) = f b (aplicarDireita f a bs)
 
--- Assim, aplicarDireita (^) 1 [2,3,4] seria o mesmo que (1 ^ (2 ^ (3 ^ 4)))
+-- Assim, aplicarDireita (^) 1 [2,3,4] seria o mesmo que (2 ^ (3 ^ (4 ^ 1)))
 
 -- E é para isso que servem foldl e foldr. A diferença é que são mais poderosas, podendo ser
 -- aplicadas para tipos além dos Inteiros.
+
 
 
