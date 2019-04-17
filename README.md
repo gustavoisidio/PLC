@@ -19,8 +19,9 @@ Um apanhado de provas antigas e aulas práticas e suas respostas
 
 ## Autores
 
-* **Gustavo Isidio** - *Todas as respostas de provas e aulas práticas* - [Página Pessoal](cin.ufpe.br/~gisf)
+* **Gustavo Isidio** - *Todas as respostas de provas e aulas práticas* - [Página Pessoal](http://cin.ufpe.br/~gisf/)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
