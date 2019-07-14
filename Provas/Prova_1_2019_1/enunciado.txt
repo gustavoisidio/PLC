@@ -8,7 +8,7 @@ meio :: String -> Int -> Int -> String
 2) (2.5) Escreva uma função localizar, que indica a posição  de início de uma String dentro de outra. Caso não seja encotnrada ou a String de busca seja vazia, deve ser retornado o valor 0 (zero). A contagem das posições começa no valor 1 para o primeiro caracter. Deve ser retornada a posicao da primeira ocorrencia, se houver mais de uma.
 Exemplos: localizar "abc" "xyz12abrt" ----> 0
           localizar "abc" "aaabrsabcfr" --> 7
-          localizar "aab" "aacrabceaabc" -> 5
+          localizar "aab" "aacrabceaabc" -> 9
           localizar "" "aacrabceaabc" ----> 0
 localizar :: String -> String -> Int
 
@@ -17,10 +17,10 @@ ParaFrente -- Que recebe um inteiro N como parâmetro e move a posição de leit
 ParaTras -- que recebe um inteiro N como parâmetro e move a posição de leitura N posições para tras;
 Escreva -- que recebe um caracter como parametro e escreve o caracter naquela posicao da fita, substituindo o caracter que estiver naquela posicao;
 A fita comeca na posicao de numero 1.
-N˜ao é preciso tratar o caso da fita se mover para uma posicao invalida (menor que 1).
+Nao é preciso tratar o caso da fita se mover para uma posicao invalida (menor que 1).
 
 data Comando = ParaFrente Int
-             | Para Tras Int
+             | ParaTras Int
              | Escreva Char
              deriving (Show, Eq)
 
