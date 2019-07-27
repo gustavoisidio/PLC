@@ -19,7 +19,7 @@ Um apanhado de provas antigas e aulas práticas e suas respostas
 
 ## Autores
 
-* [ **Gustavo Isidio** ] ( http://cin.ufpe.br/~gisf ) - *Todas as respostas de provas e aulas*
+* [Gustavo Isidio]( http://cin.ufpe.br/~gisf ) - *Todas as respostas de provas e aulas*
 
 ## License
 
