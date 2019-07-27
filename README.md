@@ -7,7 +7,7 @@ Um apanhado de provas antigas e aulas práticas e suas respostas
 * [Provas](https://github.com/gustavoisidio/PLC/tree/master/Provas) - Provas antigas de Haskell feitas pelo professor André Santos e resolvidas por mim.
 * [APs](https://github.com/gustavoisidio/PLC/tree/master/APs) - Questões de aulas práticas feitas por monitores e respondidas por mim.
 * [Algoritmos](https://github.com/gustavoisidio/PLC/tree/master/Algoritmos) - Uma série de algoritmos interessantes em Haskell
-* [Aulas](https://github.com/gustavoisidio/PLC/tree/master/Aulas) - Um conteúdo extra, com algumas coisas interessantes de Haskell que não são vistas na disciplina.
+* [Aulas](https://github.com/gustavoisidio/PLC/tree/master/Aulas) - Aulas de monitoria abordando boa parte dos conteúdos vistos pelo professor com exemplos práticos.
 
 ## Sugestões para estudo:
 
