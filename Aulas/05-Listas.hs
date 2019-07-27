@@ -6,19 +6,13 @@
 
 -- Através desse operador, podemos ilustrar como cada lista é construída. "amanha", pode ser escrita como ( a : m : a : n : h : a : [] ). 
 
--- Algumas funções interessantes sobre strings
+-- Algumas funções interessantes sobre listas
 
 -- head - retorna a cabeça de uma lista
 -- head "amanha" => 'a'
 
 -- tail - retorna a calda de uma lista
 -- tail "amanha" => "manha"
-
--- length - retorna o tamanho de uma lista
--- length [ 1,2,3 ] => 3
-
--- reverse - retorna a lista invertida
--- reverse "abc" => "cba"
 
 -- É comum que o elemento de uma lista seja outra lista também. Teríamos, nesse caso, uma lista de listas. Por exemplo, ( head [ "abc", "def" ] ) retorna "abc"
 
@@ -37,4 +31,22 @@ sumList ( x:xs ) = x + sumList xs
 -- Nesse ponto, como definido na função, sumList [  ] = 0. Portanto, a resultado final segue":
 -- = 1 + 2 + 3 + 0
 -- = 6
+
+-- A função digits abaixo faz uma filtragem e deixa apenas números em uma string
+
+digits :: String -> String
+digits x = clear "0123456789" x
+    where clear numeros [] = []
+          clear numeros ( a:as )
+            | elem a numeros = a : digits as
+            | otherwise = digits as
+
+firstDigit :: String -> Char
+firstDigit st = case ( digits st ) of
+                []          -> '\0'
+                ( a:as )    -> a
+ 
+
+
+
 
