@@ -1,6 +1,4 @@
-# Paradigmas de linguagens computacionais 
 ## Aulas de monitoria
-## Paradigma funcional com Haskell 
 
 #### Índice
 * Aula 00 - Introdução a disciplina e ghci
