@@ -38,9 +38,9 @@ printXVezes2 x y
 
 -- Então, na prática, quando precisamos executar algo várias vezes ( ideia de loop ), utilizamos a boa e velha recursão, lembrando que essa recursão precisa de uma condição de parada. Para essa condição de parada, as vezes utilizamos casamento de padrões. A função printXVezes2, inclusive, poderia ser reescrita da seguinte forma
 
-printXVezes2 :: Int -> String -> String
-printXVezes2 0 _ = "" 
-printXVezes2 x y = ( y ++ "\n" ) ++ ( printXVezes2 ( x - 1 ) y )    
+printXVezes3 :: Int -> String -> String
+printXVezes3 0 _ = "" 
+printXVezes3 x y = ( y ++ "\n" ) ++ ( printXVezes3 ( x - 1 ) y )    
 
 -- Se o inteiro em questão for 0, independente da string, será retornado "" pondo um fim na recursão. Na segunda linha, diferente da primeira, ambos string e inteiro precisam ser referenciados. Portanto, precisamos nomeá-los. Nesse caso, de "x" e "y".
 

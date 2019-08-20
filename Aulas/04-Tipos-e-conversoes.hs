@@ -23,8 +23,3 @@ sumStrings x y = show xy
           xval = read x
           yval = read y
 
-
-sumCaracteres :: Char -> Char -> Int
-sumCaracteres x y = ( fromEnum x ) + ( fromEnum y )
-
-
