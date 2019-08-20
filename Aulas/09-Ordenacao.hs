@@ -1,6 +1,7 @@
 -- QuickSort simples
 
-qSort :: [Int] -> [Int] qSort [] = []
+qSort :: [Int] -> [Int]
+qSort [] = []
 qSort (x:xs) = qSort esquerda ++ [ x ] ++ qSort direita
     where esquerda = qSort [y | y <- xs, y < x]
           direita = qSort [y | y <- xs, y >= x]

@@ -10,22 +10,22 @@ adivinheUmNumero 83274 = "Aeeeee! 83274"
 
 -- No entanto, caso os padrões da função não cubram todas as possibilidades de padrões, temos um erro. Nesse caso em particular, uma solução é usar "_" como um dos padrões, que funciona como um 'else' ou 'otherwise'.
 
-adivinheUmNumero :: Int -> String
-adivinheUmNumero 0 = "Aeeeee! 0!"
-adivinheUmNumero 73 = "Aeeeee! 73!"
-adivinheUmNumero 5 = "Aeeeee! 5!"
-adivinheUmNumero 83274 = "Aeeeee! 83274"
-adivinheUmNumero _ = "Xiiee, errou :'("   
+adivinheUmNumero2 :: Int -> String
+adivinheUmNumero2 0 = "Aeeeee! 0!"
+adivinheUmNumero2 73 = "Aeeeee! 73!"
+adivinheUmNumero2 5 = "Aeeeee! 5!"
+adivinheUmNumero2 83274 = "Aeeeee! 83274"
+adivinheUmNumero2 _ = "Xiiee, errou :'("   
 
 -- É importante ter cuidado na utilização de "_" pois, como dito acima, a ordem dos padrões importa. Se for o primeiro dos padrões, por exemplo, a função vai cair nele independente da entrada. Na prática, é isso que ele significa "Independente da entrada, se chegou aqui, é isso". Executando a função abaixo para qualquer inteiro, a saída sempre será a mesma.
 
 -- Em alguns casos, temos até um warning informando que aquelas linhas de código após o primeiro padrão serão "redundantes" o que de fato faz sentido, já que independente delas, acontecerá o mesmo. 
 
-adivinheUmNumero :: Int -> String
-adivinheUmNumero _ = "Xiiee, errou :'("   
-adivinheUmNumero 0 = "Aeeeee! 0!"
-adivinheUmNumero 73 = "Aeeeee! 73!"
-adivinheUmNumero 5 = "Aeeeee! 5!"
-adivinheUmNumero 83274 = "Aeeeee! 83274"
+adivinheUmNumero3 :: Int -> String
+adivinheUmNumero3 _ = "Xiiee, errou :'("   
+adivinheUmNumero3 0 = "Aeeeee! 0!"
+adivinheUmNumero3 73 = "Aeeeee! 73!"
+adivinheUmNumero3 5 = "Aeeeee! 5!"
+adivinheUmNumero3 83274 = "Aeeeee! 83274"
 
 
