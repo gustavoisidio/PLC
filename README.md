@@ -2,6 +2,8 @@
 
 Um apanhado de provas antigas e aulas práticas e suas respostas
 
+> "Users of a procedural or object-oriented language like C, Java, or Python should beware, however: You’ll have to forget most of what you already know about programming. Haskell is completely different from those languages, and requires a different way of thinking about programming" ( Jonathan Tang )
+
 ## Índice:
 
 * [Provas](https://github.com/gustavoisidio/PLC/tree/master/Provas) - Provas antigas de Haskell feitas pelo professor André Santos e resolvidas por mim.
