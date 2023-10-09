@@ -30,6 +30,7 @@ merge f s = qSort (f++s)
 -- maiorDigito "3.157/3 > 19"  ===> 9
 
 -- função auxiliar:
+
 -- toNumber :: Char -> Int
 -- toNumber ch = fromEnum ch - fromEnum '0'
 
