@@ -14,6 +14,7 @@ insert flist slist insorder = case slist of
                                 l -> case length slist < insorder of
                                         True -> slist ++ flist          -- Se a posição é maior que o tamanho da lista então insira no final
                                         False -> [slist!!elemBefore | elemBefore <- [0 .. insorder-1]] ++ flist ++ [slist!!elemAfter | elemAfter <- [insorder .. length slist -1]]
+                                        
 
 -- 2) (2.5) Defina uma função que informa em que posição um elemento (primeiro parametro) ocorre um uma lista (segundo parâmetro). 
 -- Caso ele não ocorra você deve retornar o resultado (-1).
