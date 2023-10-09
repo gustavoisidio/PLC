@@ -45,6 +45,7 @@ maiorDigito s = case s of
 -- (3) Dada uma árvore binária definida pelo tipo abaixo, que possui nós (com um valor e duas
 --sub-árvores) e folhas (com um valor):
 
+
 data Tree t = Node t (Tree t) (Tree t) -- um nó
             |  Leaf t                   -- uma folha
             deriving Show 
