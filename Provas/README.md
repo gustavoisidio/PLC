@@ -18,7 +18,7 @@
   - o arquivo q[numero].hs deve conter somente a resolução, com comentários explicativos necessários sobre o raciocínio da estratégia de resolução
   - o arquivo q[numero].hs deve conter todos os dados, imports e funções necessárias, de modo que rode sem erros no ghci
 
-2. **Abrir pull request com as adições**
+2. **Abrir pull request com as adições** 
 
 ### Provas Respondidas
   * [x] 2023.2
