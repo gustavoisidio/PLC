@@ -1,0 +1,43 @@
+1) (2.5 pontos) Escreva uma função merge :: [Int] -> [Int] -> [Int] que combina
+os elementos da primeira lista (que já estão ordenados) com os da segunda lista
+(também já ordenados), retornando a lista que contém a lista ordenada de todos os números das duas listas
+
+exemplos:
+merge [2,6,7,9] [2,3,5] ===> [2,2,3,5,6,7,9]
+merge [2,6,9] [2,3,5] ===> [2,2,3,5,6,9]
+merge [1,2,3,4,5] [1,2,3,4,5] ===> [1,1,2,2,3,3,4,4,5,5]
+
+(2) (2.5 pontos) Escreva uma função maiorDigito :: String -> Int que retorne
+o maior dígito de uma string, retornando zero se a string não tiver dígitos. Por exemplo:
+
+maiorDigito "Inf1-FP" ===> 1
+maiorDigito "Functional" ===> 0
+maiorDigito "1+1=2" ===> 2
+maiorDigito "3.157/3 > 19"  ===> 9
+
+função auxiliar:
+
+toNumber :: Char -> Int
+toNumber ch = fromEnum ch - fromEnum '0'
+
+(3) Dada uma árvore binária definida pelo tipo abaixo, que possui nós (com um valor e duas sub-árvores) e folhas (com um valor):
+
+
+data Tree t = Node t (Tree t) (Tree t) -- um nó
+            |  Leaf t                   -- uma folha
+            deriving Show 
+
+implemente as seguintes funções
+
+(a) (2,5 pontos)  valores :: Tree t -> [t]
+uma função que recebe uma árvore e retorna a lista de todos os valores que estão nela
+
+(b) (2.5 pontos) combina :: (t -> t -> t) -> Tree t -> t
+uma função que recebe uma função de combinação, uma árvore, e combina seus
+elementos usando essa função de combinação.
+
+exemplos:
+arvore :: Tree Int
+arvore = Node 0 (Node 0 (Leaf 10) (Node 0 (Leaf 15) (Leaf 8))) (Node 0 (Node 0 (Leaf 2) (Node 0 (Leaf 3) (Leaf 4))) (Leaf 0))
+valores arvores ===> [10,15,8,2,3,4,0] -- pode ser qualquer ordem
+combina (+) arvore ===> 10 + 15 + 8 + 2 + 3 + 4 + 0 ===> 42
